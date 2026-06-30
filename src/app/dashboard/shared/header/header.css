@@ -1,0 +1,21 @@
+#sidebar-wrapper .list-group-item {
+  padding: 15px 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #00adb5 !important; /* لون الجراديانت بتاعك */
+  padding-right: 30px; /* حركة أنيميشن لطيفة عند الهوفر في الـ RTL */
+}
+
+#sidebar-wrapper .list-group-item.active {
+  background-color: #00adb5 !important;
+  color: white !important;
+  border-radius: 5px 0 0 5px;
+}
+
+#page-content-wrapper {
+  min-height: 100vh;
+}

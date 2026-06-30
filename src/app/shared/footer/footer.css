@@ -1,0 +1,61 @@
+.footer{
+    margin-top:80px;
+
+    padding:35px 0;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    text-align:center;
+}
+
+/* اللينكات */
+.footer-links{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+}
+
+.footer-links a{
+    padding:14px 22px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#66fcf1;
+
+    border-color:#66fcf1;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 12px rgba(102,252,241,.25);
+}
+
+/* الكوبي رايت */
+.copyright{
+    margin-top:30px;
+
+    color:#66fcf1;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+}

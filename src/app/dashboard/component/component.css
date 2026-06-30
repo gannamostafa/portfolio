@@ -1,0 +1,69 @@
+:host{
+
+    display:block;
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#0b0c10;
+
+}
+
+/*========================*/
+
+.dashboard{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/*========================*/
+
+.main{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#111318;
+
+}
+
+/*========================*/
+
+.page-container{
+
+    flex:1;
+
+    padding:30px;
+
+    overflow-y:auto;
+
+}
+
+/* Scroll */
+
+.page-container::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.page-container::-webkit-scrollbar-thumb{
+
+    background:#66fcf1;
+
+    border-radius:20px;
+
+}
+
+.page-container::-webkit-scrollbar-track{
+
+    background:#1f2833;
+
+}

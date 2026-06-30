@@ -1,0 +1,154 @@
+<div class="projects-editor">
+
+    <div class="page-header">
+
+        <h2>Projects</h2>
+
+        <p>Manage your portfolio projects.</p>
+
+    </div>
+
+
+    <div class="editor-card">
+
+        <h3>Add New Project</h3>
+
+        <div class="form-grid">
+
+            <div>
+
+                <label>Project Name</label>
+
+                <input
+                    type="text"
+                    placeholder="GreenMind Platform">
+
+            </div>
+
+            <div>
+
+                <label for="project-image">Project Image</label>
+
+                <input id="project-image" type="file" title="Project Image">
+
+            </div>
+
+        </div>
+
+        <label>Description</label>
+
+        <textarea
+            rows="5"
+            placeholder="Write project description..."></textarea>
+
+        <div class="form-grid">
+
+            <div>
+
+                <label>Technologies</label>
+
+                <input
+                    type="text"
+                    placeholder="MongoDB, Express, Angular">
+
+            </div>
+
+            <div>
+
+                <label>GitHub Link</label>
+
+                <input
+                    type="text"
+                    placeholder="https://github.com/...">
+
+            </div>
+
+        </div>
+
+        <label>Live Demo</label>
+
+        <input
+            type="text"
+            placeholder="https://your-project.com">
+
+        <button class="add-btn">
+
+            Add Project
+
+        </button>
+
+    </div>
+
+
+    <div class="editor-card">
+
+        <h3>Projects List</h3>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Image</th>
+
+                    <th>Name</th>
+
+                    <th>Stack</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+
+                        <div class="image-preview">
+
+                            Image
+
+                        </div>
+
+                    </td>
+
+                    <td>GreenMind</td>
+
+                    <td>React • CSS</td>
+
+                    <td>
+
+                        <button class="edit-btn">
+
+                            Edit
+
+                        </button>
+
+                        <button class="delete-btn">
+
+                            Delete
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+  <button class="save-btn">
+
+        Save Changes
+
+    </button>
+
+</div>

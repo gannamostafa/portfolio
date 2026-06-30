@@ -1,0 +1,68 @@
+<form [formGroup]="ProfileFormGroup" (ngSubmit)="submitForm()" class="hero-editor">
+    <div class="hero-editor">
+
+        <div class="page-title">
+            <h2>Hero Section</h2>
+            <p>Manage your portfolio home page.</p>
+        </div>
+
+        <div class="editor-card">
+            <h3>Profile Image</h3>
+            <div class="image-content">
+                <img [src]="ProfileFormGroup.get('profileImage')?.value || 'assets/images/jannah.jpeg'" alt="profile">
+                <div>
+                    <label for="profile-image-upload">Upload profile image</label>
+                    <input id="profile-image-upload" type="file" (change)="onFileSelected($event)" title="Upload profile image">
+                    <p>Recommended size : 500 x 500</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-card">
+            <h3>Basic Information</h3>
+            <div class="grid">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" formControlName="fullName" placeholder="Jannah Mustafa">
+                </div>
+                <div>
+                    <label>Job Title</label>
+                    <input type="text" formControlName="jobTitle" placeholder="MEAN Stack Developer">
+                </div>
+            </div>
+            <label for="description">Description</label>
+            <textarea id="description" rows="5" formControlName="description" placeholder="Tell something about yourself"></textarea>
+        </div>
+
+        <div class="editor-card">
+            <h3>Social Links</h3>
+            <input type="text" formControlName="github" placeholder="GitHub">
+            <input type="text" formControlName="linkedin" placeholder="LinkedIn">
+            <input type="email" formControlName="email" placeholder="Email">
+        </div>
+
+        <div class="editor-card">
+            <h3>Hero Technologies</h3>
+            <div class="techs">
+                @for (tech of technologiesList; track tech; let i = $index) {
+                    <span>
+                        {{ tech }} 
+                        <b (click)="removeTech(i)" style="cursor: pointer; margin-left: 5px; color: red;">✖</b>
+                    </span>
+                }
+                <button type="button" (click)="addTechnology()">Add Technology</button>
+            </div>
+        </div>
+
+        <div class="editor-card">
+            <h3>Resume</h3>
+            <label for="resume-upload">Upload resume</label>
+            <input id="resume-upload" type="file" title="Upload resume">
+        </div>
+
+        <button type="submit" class="save-btn">
+            Save Changes
+        </button>
+
+    </div>
+</form>
